@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [Sauce Las Test automtion regression suite]" guice-stage="DEVELOPMENT" verbose="3">
+  <test thread-count="3" parallel="tests" name="Sauce Test - Chrome(failed)" verbose="3">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="version" value="85.0"/>
+    <parameter name="platform" value="macOS 10.15"/>
+    <classes>
+      <class name="demo.SauceTest">
+        <methods>
+          <include name="checkInventoryItemTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="checkAddToCartButtonTest"/>
+        </methods>
+      </class> <!-- demo.SauceTest -->
+    </classes>
+  </test> <!-- Sauce Test - Chrome(failed) -->
+</suite> <!-- Failed suite [Sauce Las Test automtion regression suite] -->
